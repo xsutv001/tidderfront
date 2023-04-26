@@ -1,0 +1,241 @@
+:root {
+    --border: #e5e5e5;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Roboto;
+    color: #333;
+}
+
+header {
+    top: 0;
+    z-index: 1;
+    position: fixed;
+    background-color: #fff;
+    width: 100%;
+}
+
+.header_top {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    justify-content: space-between;
+    padding: 15px 10px;
+}
+
+.header_top > * {
+    width: 50%;
+}
+
+.header_top--logo img {
+    max-width: 10%;
+}
+
+.header_top--icons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header_top--icons i {
+    margin: 0px 10px;
+}
+
+.stories {
+    margin-top: 50px;
+    display: flex;
+    padding: 5px 10px 10px 10px;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+.stories .story {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.stories .story:first-child {
+    border: none;
+}
+
+
+
+
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchInputWrapper {
+    position: relative;
+}
+
+.searchInput {
+    width: 20rem;
+    height: 2rem;
+    padding: 0 1rem;
+    border-radius: 2rem;
+    border: none;
+    transition: transform 0.1s ease-in-out;
+}
+
+::placeholder {
+    color: #a1a1a1;
+}
+
+/* hide the placeholder text on focus */
+:focus::placeholder {
+    text-indent: -999px
+}
+
+.searchInput:focus {
+    outline: none;
+    transform: scale(1.1);
+    transition: all 0.1s ease-in-out;
+}
+
+.searchInputIcon {
+    position: absolute;
+    right: 0.8rem;
+    top: 0.5rem;
+    color: #a1a1a1;
+    transition: all 0.1s ease-in-out;
+}
+
+.container:focus-within >
+.searchInputWrapper > .searchInputIcon {
+    right: 0.2rem;
+}
+
+
+
+
+
+.posts {
+    margin-bottom: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.post_header {
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+}
+
+.post_header img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.post_user {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.post_content {
+    max-width: 300px;
+    max-height: 500px;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.post_content img {
+    max-width: 400px;
+    max-height: 300px;
+
+}
+
+.post_text,
+.post_icons {
+    padding: 5px 10px;
+}
+
+.post_icons i {
+    margin: 0px 5px;
+}
+
+.post_icons i:first-child {
+    margin: 0px 5px 0px 0px;
+}
+
+.username {
+    font-weight: 700;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.hashtag {
+    color: rgb(62, 62, 201);
+}
+
+
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+
+}
+
+
+.tab button {
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+
+.tab button:hover {
+    background-color: #ddd;
+}
+
+
+.tab button.active {
+    background-color: #ccc;
+}
+
+
+
+
+
+footer {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #fff;
+}
+
+footer a {
+    color: #333;
+}
+
+footer a img {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+

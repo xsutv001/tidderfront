@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+
+.comment-box,
+.post-comment .list{
+    background: #ffffff;
+    border-radius: 6px;
+    box-shadow: 0 2px 2px #0002;
+}
+
+.comment-section{
+    width: 70%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.post-comment .list{
+    width: 100%;
+    margin-bottom: 12px;
+}
+
+.post-comment .list .user{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.post-comment .list .user img{
+    height: 38px;
+    width: 38px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+
+
+.post-comment .comment-post{
+    padding: 0 0 15px 58px;
+}
+
+/* Comment Box */
+
+.comment-box{
+    width: 100%;
+    padding: 3%;
+    margin-bottom: 10px;
+
+}
+
+
+.comment-box .user img{
+    width: 38px;
+    height: 38px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.comment-box textarea{
+    background: #eeeeee;
+    width: 100%;
+    height: 50px;
+    margin: 10px 0;
+    padding: 10px;
+    resize: inherit;
+    border-radius: 5px;
+    box-shadow: 0 0 0 1px #0003;
+}
+
+.comment-box textarea:focus-visible{
+    box-shadow: inset 0 0 0 1px #3662FE;
+    outline: none;
+}
+.comment-box .submit{
+    float: right;
+    padding: 6px;
+    border: none;
+    background: #3662FE;
+    color: #eeeeee;
+    cursor: pointer;
+    border-radius: 3px;
+}
